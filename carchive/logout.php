@@ -1,0 +1,10 @@
+<?php
+session_start();
+include('../connection.inc.php');
+include('../function.inc.php');
+unset($_SESSION['CARCHIVE_IS_LOGIN']);
+unset($_SESSION['CARCHIVE_USER']);
+unset($_SESSION['CARCHIVE_USER_NAME']);
+unset($_SESSION['CARCHIVE_ID']);
+redirect('login.php');
+?>

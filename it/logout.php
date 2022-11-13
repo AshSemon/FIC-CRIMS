@@ -1,0 +1,10 @@
+<?php
+session_start();
+include('../connection.inc.php');
+include('../function.inc.php');
+unset($_SESSION['IT_IS_LOGIN']);
+unset($_SESSION['IT_USER']);
+unset($_SESSION['IT_USER_NAME']);
+unset($_SESSION['IT_ID']);
+redirect('login.php');
+?>

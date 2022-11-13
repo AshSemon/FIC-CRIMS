@@ -1,0 +1,10 @@
+<?php
+session_start();
+include('../connection.inc.php');
+include('../function.inc.php');
+unset($_SESSION['JUDGE_IS_LOGIN']);
+unset($_SESSION['JUDGE_USER']);
+unset($_SESSION['JUDGE_USER_NAME']);
+unset($_SESSION['JUDGE_ID']);
+redirect('login.php');
+?>
